@@ -1,0 +1,67 @@
+.tl__channels-container h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.tl__channels-container p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: var(--color-text);
+}
+
+.tl__channels-container__input {
+    width: 100%;
+    max-width: 550px;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tl__channels-container__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 35px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 24px;
+    color:#FFF;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.tl__channels-container__input button {
+    flex: 0.6;
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--color-highlight);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    padding: 0 2rem 0;
+    border: none;
+}
+
+.tl__channels-container_channels {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+}

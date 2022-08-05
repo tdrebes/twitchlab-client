@@ -1,0 +1,31 @@
+.tl__error {
+    color: #FFF;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 30rem;
+    margin: 0 auto;
+}
+
+.tl__error-content {
+    margin: 0 auto;
+}
+
+.tl__error-content h1 {
+    font-size: 48px;
+}
+
+.tl__error-content p {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 850px) {
+    .tl__error-content h1 {
+        font-size: 36px;
+    }
+    .tl__error-content p {
+        font-size: 20px;
+    }
+}

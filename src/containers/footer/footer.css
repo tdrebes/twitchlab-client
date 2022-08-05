@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.tl__footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-footer)
+}
+
+.tl__footer-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.tl__footer-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+}
+
+.tl__footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #FFF;
+    text-align: center;
+
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+
+.tl__footer-btn:hover {
+    background: var(--color-bg);
+}
+
+.tl__footer-btn p {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF;
+    word-spacing: 2px;
+}
+
+.tl__footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+.tl__footer-links_div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tl__footer-links_logo p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.tl__footer-links_div h4 {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+}
+
+.tl__footer-links_div p {
+    font-family: var(--font-family);
+    line-height: 12px;
+    line-height: 14px;
+    color: #FFF;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.tl__footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.tl__footer-copyright p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFF;
+}
+
+@media screen and (max-width: 850px) {
+    .tl__footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tl__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .tl__footer-links div {
+        margin: 1rem 0;
+    }
+
+    .tl__footer-btn p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tl__footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}

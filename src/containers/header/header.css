@@ -1,0 +1,144 @@
+.tl__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.tl__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    margin-right: 5rem;
+}
+
+.tl__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.tl__header-content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.tl__header-content__input {
+    width: 100%;
+    max-width: 550px;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tl__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 35px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 24px;
+    color:#FFF;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.tl__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--color-highlight);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    padding: 0 2rem 0;
+    border: none;
+}
+
+.tl__header-content_channels {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tl__header-content_channels p {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .tl__header {
+        flex-direction: column;
+    }
+
+    .tl__header h1 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+
+    .tl__header-content {
+        margin: 0 0 3rem
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tl__header h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .tl__header p {
+        line-height: 22px
+    }
+
+    .tl__header-content_channels p {
+        margin: 0;
+    }
+
+    .tl__header-content__input input,
+    .tl__header-content__input button {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .tl__header h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .tl__header p {
+        font-size: 14px;
+    }
+
+    .tl__header-content_channels p {
+        font-size: 12px;
+    }
+}

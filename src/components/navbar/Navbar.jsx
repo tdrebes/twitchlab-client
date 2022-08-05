@@ -1,0 +1,52 @@
+import React, { useState } from 'react'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { NavLink } from 'react-router-dom';
+import './navbar.css';
+
+const Menu = () => (
+    <>
+    <p className="hover-underline-animation"><NavLink to="/">Home</NavLink></p>
+    <p className="hover-underline-animation"><NavLink to="/channels">Explore</NavLink></p>
+    <p className="hover-underline-animation"><NavLink to="/about">About</NavLink></p>
+    </>
+)
+
+const Navbar = () => {
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+    return (
+        <div className="tl__navbar">
+            <div className="tl__navbar-links">
+                <div className="tl__navbar-links_logo">
+                    <h1 className="tl__logo_text noselect">Twitchlab</h1>
+                </div>
+                <div className="tl__navbar-links_container">
+                    <Menu />
+                </div>
+            </div>
+            <div className="tl__navbar-sign">
+                <p className="hover-underline-animation">Sign in</p>
+                <button type="button">Sign up</button>
+            </div>
+            <div className="tl__navbar-menu">
+                {toggleMenu 
+                ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
+                : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>}
+
+                {toggleMenu && (
+                    <div className="tl__navbar-menu_container scale-up-ver-top">
+                        <div className="tl__navbar-menu_container-links">
+                            <Menu />
+                            <div className="tl__navbar-menu_container-links-sign">
+                                <p className="hover-underline-animation">Sign in</p>
+                                <button type="button" className>Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    )
+}
+
+export default Navbar
