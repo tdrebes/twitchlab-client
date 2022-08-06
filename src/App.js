@@ -7,7 +7,7 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div className="gradient__bg">
+                <div>
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Header />}/>

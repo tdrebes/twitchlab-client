@@ -1,0 +1,25 @@
+.tl__hover-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #FFF;
+    text-align: center;
+
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+
+.tl__hover-button:hover {
+    background: var(--color-bg);
+}
+
+.tl__hover-button p {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF;
+    word-spacing: 2px;
+}
