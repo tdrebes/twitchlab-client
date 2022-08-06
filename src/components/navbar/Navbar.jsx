@@ -29,6 +29,7 @@ const Navbar = () => {
                 <p className="hover-underline-animation">Sign in</p>
                 <button type="button">Sign up</button>
             </div>
+
             <div className="tl__navbar-menu">
                 {toggleMenu 
                 ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>

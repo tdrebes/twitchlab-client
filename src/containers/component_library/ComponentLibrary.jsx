@@ -6,8 +6,15 @@ import './component_library.css'
 function ComponentLibrary() {
   return (
     <div className='tl__component-library'>
-      <Exalted/>
-      <HoverButton link="#" title="Hover Button"/>
+      <h1 className='gradient__text'>Button styles</h1>
+      <div className='section__padding'>
+        <Exalted text="Exalted"/>
+        <HoverButton link="#" title="Hover Button"/>
+      </div>
+      <h1 className='gradient__text'>Modules</h1>
+      <div className='section__padding'>
+        ...
+      </div>
     </div>
   )
 }

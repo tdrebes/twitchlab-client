@@ -1,3 +1,11 @@
+.tl__component-library h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
 .tl__component-library {
     color: white;
     display: flex;

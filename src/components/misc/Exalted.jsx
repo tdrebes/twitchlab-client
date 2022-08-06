@@ -1,10 +1,10 @@
 import React from 'react'
 import './exalted.css'
 
-function Exalted() {
+function Exalted(props) {
   return (
     <div className="tl__exalted over-underline-animation">
-        <p className="noselect">★ Exalted</p>
+        <p className="noselect">★ {props.text}</p>
     </div>
   )
 }
