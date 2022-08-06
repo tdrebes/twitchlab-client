@@ -8,6 +8,7 @@ const Menu = () => (
     <p className="hover-underline-animation"><NavLink to="/">Home</NavLink></p>
     <p className="hover-underline-animation"><NavLink to="/channels">Explore</NavLink></p>
     <p className="hover-underline-animation"><NavLink to="/about">About</NavLink></p>
+    <p className="hover-underline-animation"><NavLink to="/components">Components</NavLink></p>
     </>
 )
 

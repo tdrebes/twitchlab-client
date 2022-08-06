@@ -1,0 +1,35 @@
+.tl__exalted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #ff0000;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.tl__exalted:hover {
+    background: var(--color-bg);
+}
+
+.tl__exalted p {
+    box-sizing: border-box;
+    /* font-family: var(--font-family); */
+    font-family: Exalted;
+    font-size: 26px;
+    line-height: 5px;
+    color: #ff0000;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Exalted';
+    src: local('Exalted'), url(./fonts/Fontin-Bold.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}

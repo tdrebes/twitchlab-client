@@ -1,0 +1,10 @@
+.tl__component-library {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+
+    background: var(--color-footer)
+}
