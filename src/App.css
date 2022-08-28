@@ -38,6 +38,10 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+.blurry-text {
+    filter:blur(3px);
+ }
+
 .tl__logo_text {
     font-family: var(--font-family);
     color: #FFF;
