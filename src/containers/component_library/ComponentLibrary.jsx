@@ -1,19 +1,21 @@
 import React from 'react'
-import { HoverButton } from '../../components';
+import { HoverButton, UrlTable } from '../../components';
 import Exalted from '../../components/misc/Exalted';
+import Channels from '../channels/Channels';
+import Header from '../header/Header';
+import Login from '../login/Login';
 import './component_library.css'
 
 function ComponentLibrary() {
   return (
-    <div className='tl__component-library'>
-      <h1 className='gradient__text'>Button styles</h1>
-      <div className='section__padding'>
+    <div>
+      <Header />
+      <Channels />
+      <Login />
+      <UrlTable />
+      <div className="tl__component-library-buttons">
         <Exalted text="Exalted"/>
         <HoverButton link="#" title="Hover Button"/>
-      </div>
-      <h1 className='gradient__text'>Modules</h1>
-      <div className='section__padding'>
-        ...
       </div>
     </div>
   )
