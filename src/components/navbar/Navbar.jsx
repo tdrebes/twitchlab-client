@@ -19,15 +19,16 @@ const Navbar = () => {
         <div className="tl__navbar">
             <div className="tl__navbar-links">
                 <div className="tl__navbar-links_logo">
-                    <h1 className="tl__logo_text noselect">Twitchlab</h1>
+                    <h1 className="tl__logo_text noselect">TDUnit</h1>
                 </div>
                 <div className="tl__navbar-links_container">
                     <Menu />
                 </div>
             </div>
             <div className="tl__navbar-sign">
-                <p className="hover-underline-animation">Sign in</p>
-                <button type="button">Sign up</button>
+                <a href="/login">
+                    <button type="button">Login</button>
+                </a>
             </div>
 
             <div className="tl__navbar-menu">
@@ -40,8 +41,7 @@ const Navbar = () => {
                         <div className="tl__navbar-menu_container-links">
                             <Menu />
                             <div className="tl__navbar-menu_container-links-sign">
-                                <p className="hover-underline-animation">Sign in</p>
-                                <button type="button" className>Sign up</button>
+                                <button type="button" className>Login</button>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,26 @@
+.tl__login-container h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.tl__login-container p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: var(--color-text);
+}
+
+.tl__login-container__input {
+    width: 100%;
+    max-width: 550px;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
